@@ -1,0 +1,44 @@
+{
+  "name": "@darekkay/eslint-config",
+  "description": "My shared ESLint configs",
+  "version": "1.0.0",
+  "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
+  "bugs": {
+    "url": "https://github.com/darekkay/darekkay-eslint-config/issues",
+    "email": "hello@darekkay.com"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-react-app": "5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "homepage": "https://github.com/darekkay/darekkay-eslint-config",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "lint"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=3.4.0",
+    "@typescript-eslint/parser": ">=3.4.0",
+    "babel-eslint": ">=10.0.0",
+    "eslint": ">=7.0.0",
+    "eslint-plugin-import": ">=2.20.0",
+    "eslint-plugin-jest-dom": ">=3.0.1",
+    "eslint-plugin-jsx-a11y": ">=6.3.1",
+    "eslint-plugin-prettier": ">=3.1.4",
+    "eslint-plugin-react": ">=7.20.0",
+    "eslint-plugin-testing-library": ">=3.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darekkay/darekkay-eslint-config.git"
+  },
+  "scripts": {
+    "format": "node_modules/.bin/prettier --write -- \"{base,node,prettier,react,testing-library,typescript}.js\""
+  }
+}
