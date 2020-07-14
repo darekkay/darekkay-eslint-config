@@ -4,9 +4,13 @@ module.exports = {
 
   env: {
     browser: false,
-    es6: true,
+    es2020: true,
     jest: true,
     node: true
+  },
+
+  parserOptions: {
+    ecmaVersion: 2020,
   },
 
   plugins: ["import"],
