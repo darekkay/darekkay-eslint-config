@@ -30,6 +30,7 @@ module.exports = {
   rules: {
     "import/order": "error",
 
+    "react/jsx-curly-brace-presence": "error",
     "react/jsx-filename-extension": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off"
