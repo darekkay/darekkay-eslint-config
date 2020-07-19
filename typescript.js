@@ -4,7 +4,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
     // typescript-eslint specific options
-    warnOnUnsupportedTypeScriptVersion: true
+    warnOnUnsupportedTypeScriptVersion: true,
   },
 
   plugins: ["@typescript-eslint"],
@@ -23,10 +23,10 @@ module.exports = {
       "error",
       {
         args: "after-used",
-        ignoreRestSiblings: true
-      }
+        ignoreRestSiblings: true,
+      },
     ],
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "error"
-  }
+    "@typescript-eslint/no-useless-constructor": "error",
+  },
 };

@@ -3,6 +3,6 @@ module.exports = {
   rules: {
     "linebreak-style": "off",
     "no-console": "error",
-    radix: "off"
-  }
+    radix: "off",
+  },
 };

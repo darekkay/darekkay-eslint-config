@@ -5,22 +5,22 @@ module.exports = {
     "plugin:jest-dom/recommended",
     "./base",
     "./prettier",
-    "./testing-library"
+    "./testing-library",
   ],
 
   env: {
     browser: true,
     es2020: true,
     jest: true,
-    node: true
+    node: true,
   },
 
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    sourceType: "module"
+    sourceType: "module",
   },
 
   plugins: ["import", "jsx-a11y", "react", "react-hooks", "jest-dom"],
@@ -33,12 +33,12 @@ module.exports = {
     "react/jsx-curly-brace-presence": "error",
     "react/jsx-filename-extension": "off",
     "react/prop-types": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
   },
 
   settings: {
     react: {
-      version: "detect"
-    }
-  }
+      version: "detect",
+    },
+  },
 };

@@ -6,14 +6,14 @@ module.exports = {
     browser: false,
     es2020: true,
     jest: true,
-    node: true
+    node: true,
   },
 
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
 
   plugins: ["import"],
 
-  root: true
+  root: true,
 };
