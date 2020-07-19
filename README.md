@@ -12,7 +12,7 @@ For all configurations, those packages have to be installed:
 yarn add -D eslint @darekkay/eslint-config eslint-plugin-import eslint-plugin-prettier 
 ```
 
-Some additional packages may be required, depending on the environment.
+You may require additional packages, depending on the environment.
 
 ## Configurations
 
