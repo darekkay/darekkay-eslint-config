@@ -28,7 +28,13 @@ module.exports = {
   root: true,
 
   rules: {
-    "import/order": "error",
+    "import/order": [
+      "error",
+      {
+        groups: ["builtin", "external", "internal"],
+        "newlines-between": "always",
+      },
+    ],
 
     "react/jsx-curly-brace-presence": "error",
     "react/jsx-filename-extension": "off",
@@ -39,6 +45,13 @@ module.exports = {
   settings: {
     react: {
       version: "detect",
+    },
+    "import/external-module-folders": ["node_modules"],
+    "import/resolver": {
+      node: {
+        moduleDirectory: ["src"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
 };
