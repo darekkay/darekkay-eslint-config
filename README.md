@@ -76,3 +76,7 @@ $ npm publish --access public
 - [Shareable ESLint configs](https://eslint.org/docs/developer-guide/shareable-configs)
 - [Support having plugins as dependencies in shareable config](https://github.com/eslint/eslint/issues/3458)
 - [ESLint plugin/config explanation](https://gist.github.com/yangshun/318102f525ec68033bf37ac4a010eb0c)
+
+## License
+
+This project and its contents are open source under the [MIT license](LICENSE).
