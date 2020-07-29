@@ -1,6 +1,15 @@
-/** Configuration for Node (non-browser) projects */
+/**
+ * Configuration for Node (non-browser) projects
+ * */
 module.exports = {
-  extends: ["./base", "./prettier"],
+  extends: [
+    "./base",
+
+    "./plugins/unicorn",
+    "./plugins/node",
+
+    "./plugins/prettier",
+  ],
 
   env: {
     browser: false,
@@ -12,8 +21,6 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
-
-  plugins: ["import"],
 
   root: true,
 };

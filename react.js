@@ -1,11 +1,18 @@
-/** Configuration for React projects */
+/**
+ * Configuration for React projects
+ * */
 module.exports = {
   extends: [
-    "react-app",
-    "plugin:jest-dom/recommended",
     "./base",
-    "./prettier",
-    "./testing-library",
+
+    "./plugins/unicorn",
+    "./plugins/import",
+    "./plugins/jest",
+    "./plugins/jest-dom",
+    "./plugins/react",
+    "./plugins/testing-library",
+
+    "./plugins/prettier",
   ],
 
   env: {
@@ -23,35 +30,16 @@ module.exports = {
     sourceType: "module",
   },
 
-  plugins: ["import", "jsx-a11y", "react", "react-hooks", "jest-dom"],
-
   root: true,
-
-  rules: {
-    "import/order": [
-      "error",
-      {
-        groups: ["builtin", "external", "internal"],
-        "newlines-between": "always",
-      },
-    ],
-
-    "react/jsx-curly-brace-presence": "error",
-    "react/jsx-filename-extension": "off",
-    "react/prop-types": "off",
-    "react/require-default-props": "off",
-  },
 
   settings: {
     react: {
       version: "detect",
     },
-    "import/external-module-folders": ["node_modules"],
-    "import/resolver": {
-      node: {
-        moduleDirectory: ["src"],
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
+    "import/extensions": [".js", ".jsx"],
+  },
+
+  rules: {
+    "import/no-nodejs-modules": "error",
   },
 };

@@ -8,11 +8,24 @@
     "email": "hello@darekkay.com"
   },
   "dependencies": {
-    "eslint-config-prettier": "6.11.0",
-    "eslint-config-react-app": "5.2.1"
+    "eslint-config-prettier": "6.11.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "@typescript-eslint/eslint-plugin": "3.7.1",
+    "eslint": "7.5.0",
+    "eslint-find-rules": "3.6.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "23.19.0",
+    "eslint-plugin-jest-dom": "3.1.4",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.5",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "eslint-plugin-testing-library": "3.4.0",
+    "eslint-plugin-unicorn": "21.0.0",
+    "prettier": "2.0.5",
+    "typescript": "3.9.7"
   },
   "homepage": "https://github.com/darekkay/darekkay-eslint-config",
   "keywords": [
@@ -22,25 +35,16 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=3.4.0",
-    "@typescript-eslint/parser": ">=3.4.0",
-    "babel-eslint": ">=10.0.0",
-    "eslint-plugin-jest-dom": ">=3.0.1",
-    "eslint-plugin-jsx-a11y": ">=6.3.1",
-    "eslint-plugin-react": ">=7.20.0",
-    "eslint-plugin-testing-library": ">=3.3.1"
-  },
   "peerDependencies": {
-    "eslint": ">=7.0.0",
-    "eslint-plugin-import": ">=2.20.0",
-    "eslint-plugin-prettier": ">=3.1.4"
+    "eslint": ">=6.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/darekkay/darekkay-eslint-config.git"
   },
   "scripts": {
-    "format": "node_modules/.bin/prettier --write -- \"{base,node,prettier,react,testing-library,typescript}.js\""
+    "format": "node_modules/.bin/prettier --write -- \"{base,node,react,typescript,plugins/**/*}.js\"",
+    "lint:check": "eslint \"{base,node,react,typescript,plugins/**/*}.js\" --max-warnings=0 -c node.js",
+    "lint:fix": "eslint --fix \"{base,node,react,typescript,plugins/**/*}.js\" -c node.js"
   }
 }
