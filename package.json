@@ -44,7 +44,7 @@
   },
   "scripts": {
     "format": "node_modules/.bin/prettier --write -- \"{base,node,react,typescript,plugins/**/*}.js\"",
-    "lint:check": "eslint \"{base,node,react,typescript,plugins/**/*}.js\" --max-warnings=0 -c node.js",
-    "lint:fix": "eslint --fix \"{base,node,react,typescript,plugins/**/*}.js\" -c node.js"
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
   }
 }
