@@ -11,6 +11,7 @@
     "eslint-config-prettier": "6.11.0"
   },
   "devDependencies": {
+    "@darekkay/logger": "1.0.2",
     "@typescript-eslint/eslint-plugin": "3.7.1",
     "cross-env": "7.0.2",
     "eslint": "7.5.0",
@@ -27,6 +28,9 @@
     "eslint-plugin-unicorn": "21.0.0",
     "prettier": "2.0.5",
     "typescript": "3.9.7"
+  },
+  "engines": {
+    "node": ">=12.6.3"
   },
   "homepage": "https://github.com/darekkay/darekkay-eslint-config",
   "keywords": [
@@ -45,10 +49,8 @@
   },
   "scripts": {
     "ci": "cross-env CI=true npm run lint:check",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint --fix ."
-  },
-  "engines": {
-    "node": ">=12.6.3"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "node internals/find-new-rules.js"
   }
 }
