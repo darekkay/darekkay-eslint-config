@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "3.7.1",
+    "cross-env": "7.0.2",
     "eslint": "7.5.0",
     "eslint-find-rules": "3.6.0",
     "eslint-plugin-import": "2.22.0",
@@ -43,8 +44,11 @@
     "url": "https://github.com/darekkay/darekkay-eslint-config.git"
   },
   "scripts": {
-    "format": "node_modules/.bin/prettier --write -- \"{base,node,react,typescript,plugins/**/*}.js\"",
+    "ci": "cross-env CI=true npm run lint:check",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix ."
+  },
+  "engines": {
+    "node": ">=12.6.3"
   }
 }
