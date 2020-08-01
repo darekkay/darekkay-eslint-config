@@ -32,6 +32,10 @@
   "engines": {
     "node": ">=12.6.3"
   },
+  "files": [
+    "/plugins/**",
+    "/*.js"
+  ],
   "homepage": "https://github.com/darekkay/darekkay-eslint-config",
   "keywords": [
     "eslint",
