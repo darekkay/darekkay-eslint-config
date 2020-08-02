@@ -7,6 +7,8 @@ module.exports = {
   plugins: ["react", "react-hooks", "jsx-a11y"],
 
   rules: {
+    "new-cap": "off",
+
     /**
      * eslint-plugin-react
      * https://www.npmjs.com/package/eslint-plugin-react
@@ -27,7 +29,7 @@ module.exports = {
       "error",
       { props: "never", children: "ignore" },
     ],
-    "react/jsx-filename-extension": ["error", { extensions: [".js"] }],
+    "react/jsx-filename-extension": ["error", { extensions: [".js", ".tsx"] }],
     "react/jsx-fragments": "error",
     "react/jsx-handler-names": "off",
     "react/jsx-key": "error",
@@ -39,7 +41,7 @@ module.exports = {
     "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": "error",
     "react/jsx-no-undef": "error",
-    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-no-useless-fragment": "off",
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-sort-default-props": "off",
@@ -116,7 +118,7 @@ module.exports = {
     "jsx-a11y/img-redundant-alt": "error",
     "jsx-a11y/interactive-supports-focus": "error",
     "jsx-a11y/label-has-associated-control": "error",
-    "jsx-a11y/label-has-for": "error",
+    "jsx-a11y/label-has-for": "off", // deprecated
     "jsx-a11y/lang": "error",
     "jsx-a11y/media-has-caption": "off",
     "jsx-a11y/mouse-events-have-key-events": "error",
@@ -127,7 +129,7 @@ module.exports = {
     "jsx-a11y/no-noninteractive-element-interactions": "error",
     "jsx-a11y/no-noninteractive-element-to-interactive-role": "error",
     "jsx-a11y/no-noninteractive-tabindex": "error",
-    "jsx-a11y/no-onchange": "error",
+    "jsx-a11y/no-onchange": "off",
     "jsx-a11y/no-redundant-roles": "error",
     "jsx-a11y/no-static-element-interactions": "error",
     "jsx-a11y/role-has-required-aria-props": "error",

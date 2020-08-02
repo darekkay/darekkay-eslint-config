@@ -20,4 +20,8 @@ module.exports = {
 
     "prettier/@typescript-eslint",
   ].filter(Boolean),
+
+  rules: {
+    "node/no-unsupported-features/es-syntax": "off",
+  },
 };

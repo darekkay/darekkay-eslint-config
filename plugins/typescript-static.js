@@ -8,11 +8,14 @@
  * */
 module.exports = {
   rules: {
+    "import/no-unresolved": "off",
+    "jest/no-export": "off",
+
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "off",
-    "@typescript-eslint/ban-ts-comment": "error",
+    "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-tslint-comment": "off",
-    "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/class-literal-property-style": "off",
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
@@ -20,7 +23,7 @@ module.exports = {
     "@typescript-eslint/default-param-last": "error", // extension rule
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/init-declarations": "off", // extension rule
     "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": "error", // extension rule
@@ -31,9 +34,9 @@ module.exports = {
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // extension rule
-    "@typescript-eslint/no-dynamic-delete": "error",
+    "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/no-empty-function": "off", // extension rule
-    "@typescript-eslint/no-empty-interface": "error",
+    "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
@@ -62,7 +65,7 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ], // extension rule
-    "@typescript-eslint/no-unused-vars-experimental": "error",
+    "@typescript-eslint/no-unused-vars-experimental": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "error", // extension rule
     "no-useless-constructor": "off",

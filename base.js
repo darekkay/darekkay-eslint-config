@@ -167,13 +167,13 @@ module.exports = {
      * Stylistic Issues
      * https://eslint.org/docs/rules/#stylistic-issues
      */
-    camelcase: "error",
+    camelcase: "off",
     "capitalized-comments": "off",
     "consistent-this": "off",
     "func-name-matching": "off",
     "func-names": "off",
     "func-style": "off",
-    "id-denylist": ["error", "data", "e", "err", "cb"],
+    "id-denylist": "off",
     "id-length": "off",
     "id-match": "off",
     "line-comment-position": "off",
@@ -208,7 +208,13 @@ module.exports = {
     "prefer-object-spread": "off",
     "sort-keys": "off",
     "sort-vars": "off",
-    "spaced-comment": ["error", "always"],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        markers: ["/"], // allow tripple slash comments, e.g. for TypeScript
+      },
+    ],
 
     /**
      * ECMAScript 6
@@ -229,7 +235,13 @@ module.exports = {
     "no-var": "error",
     "object-shorthand": ["error", "properties"],
     "prefer-const": "error",
-    "prefer-destructuring": ["error", { object: true, array: false }],
+    "prefer-destructuring": [
+      "error",
+      {
+        object: true,
+        array: false,
+      },
+    ],
     "prefer-numeric-literals": "off",
     "prefer-rest-params": "error",
     "prefer-spread": "error",

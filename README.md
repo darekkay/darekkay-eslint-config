@@ -11,7 +11,7 @@ The configurations can be mixed, e.g. `React` + `TypeScript`.
 For all configurations, those packages have to be installed:
 
 ```
-yarn add -D eslint @darekkay/eslint-config eslint-plugin-import eslint-plugin-prettier 
+yarn add -D eslint @darekkay/eslint-config eslint-plugin-unicorn eslint-plugin-prettier 
 ```
 
 You may require additional packages, depending on the environment.
@@ -25,7 +25,7 @@ You may require additional packages, depending on the environment.
 Configuration for React projects.
 
 ```
-yarn add -D babel-eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-testing-library
+yarn add -D babel-eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-testing-library
 ```
 
 ### Node
@@ -33,6 +33,10 @@ yarn add -D babel-eslint eslint-plugin-react eslint-plugin-react-hooks eslint-pl
 - `@darekkay/eslint-config/node`
 
 Configuration for Node (non-browser) projects.
+
+```
+yarn add -D eslint-plugin-node
+```
 
 ### TypeScript
 
