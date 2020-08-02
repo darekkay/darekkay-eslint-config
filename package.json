@@ -53,6 +53,7 @@
   },
   "scripts": {
     "ci": "cross-env CI=true npm run lint && npm run test",
+    "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepublishOnly": "npm run ci",

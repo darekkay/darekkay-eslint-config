@@ -11,7 +11,7 @@ The configurations can be mixed, e.g. `React` + `TypeScript`.
 For all configurations, those packages have to be installed:
 
 ```
-yarn add -D eslint @darekkay/eslint-config eslint-plugin-unicorn eslint-plugin-prettier 
+yarn add -D eslint @darekkay/eslint-config eslint-plugin-unicorn eslint-plugin-prettier
 ```
 
 You may require additional packages, depending on the environment.
