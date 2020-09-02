@@ -15,5 +15,6 @@ package-lock.json
 
 ### Misc ###
 
+/coverage
 *.log
 .DS_Store
