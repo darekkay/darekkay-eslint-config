@@ -30,7 +30,7 @@ yarn add -D babel-eslint eslint-plugin-react eslint-plugin-react-hooks eslint-pl
 
 ### Node
 
-- `@darekkay/eslint-config/node`
+- `@darekkay/eslint-config/nodejs`
 
 Configuration for Node (non-browser) projects.
 
