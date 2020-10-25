@@ -2,31 +2,52 @@
 const findRules = require("eslint-find-rules");
 const logger = require("@darekkay/logger");
 
-const eslintConfigs = [
-  "nodejs.js",
-  "react.js",
-  "internals/typescript-node.js",
-  "internals/typescript-react.js",
-];
+const eslintConfigs = ["internals/config-all.js"];
 
 process.env.CI = "true"; // include rules that are only executed in CI environment
+process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = "true"; // exclude deprecated prettier rules
 
-let newRulesAvailable = false;
+let successful = true;
 
 eslintConfigs.forEach((eslintConfigPath) => {
-  logger.info(`Finding new rules for: ${eslintConfigPath}`);
-  const newRulesAvailableForConfig = findRules(
-    eslintConfigPath
-  ).getUnusedRules();
+  logger.info(`Evaluating rules for: ${eslintConfigPath}`);
+  const rules = findRules(eslintConfigPath);
 
-  if (newRulesAvailableForConfig.length > 0) {
-    newRulesAvailable = true;
-    logger.warn(`New rules available:`, newRulesAvailableForConfig);
+  // Find new rules that are not yet explicitly used
+  const newRules = rules.getUnusedRules();
+  if (newRules.length > 0) {
+    successful = false;
+    logger.error(`New rules available:`, newRules);
   } else {
     logger.success("No new rules available.");
   }
+
+  // Find deprecated rules
+  const deprecatedRules = rules.getDeprecatedRules();
+  if (deprecatedRules.length > 0) {
+    successful = false;
+    logger.error(`Deprecated rules:`, deprecatedRules);
+  }
+
+  // Find active rules that do not exist (anymore)
+  const availableRules = rules.getAllAvailableRules();
+  const currentActiveRules = Object.entries(
+    rules.getCurrentRulesDetailed()
+  ).reduce((accumulator, [rule, ruleConfig]) => {
+    if (ruleConfig[0] !== "off") {
+      accumulator.push(rule);
+    }
+    return accumulator;
+  }, []);
+  const removedRules = currentActiveRules.filter(
+    (rule) => !availableRules.includes(rule)
+  );
+  if (removedRules.length > 0) {
+    successful = false;
+    logger.error(`Unknown or removed rules:`, removedRules);
+  }
 });
 
-if (newRulesAvailable) {
+if (!successful) {
   process.exit(1);
 }
