@@ -24,6 +24,7 @@ module.exports = {
     "jest/no-conditional-expect": "error",
     "jest/no-deprecated-functions": "error",
     "jest/no-disabled-tests": "off",
+    "jest/no-done-callback": "error",
     "jest/no-duplicate-hooks": "error",
     "jest/no-export": "error",
     "jest/no-focused-tests": "error",
