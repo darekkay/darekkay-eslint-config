@@ -18,8 +18,6 @@ module.exports = {
   },
 
   rules: {
-    "global-require": "off", // disable because no need to have both!
-
     "import/default": "off",
     "import/dynamic-import-chunkname": "off",
     "import/export": "error",

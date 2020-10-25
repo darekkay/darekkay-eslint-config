@@ -17,8 +17,10 @@ module.exports = {
     "@typescript-eslint/ban-tslint-comment": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/class-literal-property-style": "off",
+    "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // extension rule
     "@typescript-eslint/explicit-function-return-type": "off",
@@ -34,16 +36,21 @@ module.exports = {
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // extension rule
+    "no-duplicate-imports": "off",
+    "@typescript-eslint/no-duplicate-imports": "error",
     "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/no-empty-function": "off", // extension rule
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
+    "@typescript-eslint/no-implicit-any-catch": "off",
     "@typescript-eslint/no-inferrable-types": "error",
     "no-invalid-this": "off",
     "@typescript-eslint/no-invalid-this": "error", // extension rule
     "@typescript-eslint/no-invalid-void-type": "error",
+    "no-loop-func": "off",
+    "@typescript-eslint/no-loop-func": "error",
     "no-loss-of-precision": "off",
     "@typescript-eslint/no-loss-of-precision": "error", // extension rule
     "@typescript-eslint/no-magic-numbers": "off", // extension rule
@@ -52,7 +59,11 @@ module.exports = {
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-parameter-properties": "off",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-require-imports": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-type-alias": "off",
     "no-unused-expressions": "off",
@@ -65,13 +76,13 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ], // extension rule
-    "@typescript-eslint/no-unused-vars-experimental": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "error", // extension rule
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // extension rule
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/prefer-as-const": "error",
+    "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "off",
     "@typescript-eslint/prefer-literal-enum-member": "error",
