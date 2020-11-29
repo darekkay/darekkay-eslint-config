@@ -65,21 +65,7 @@ module.exports = {
     "unicorn/prefer-text-content": "error",
     "unicorn/prefer-trim-start-end": "error",
     "unicorn/prefer-type-error": "error",
-    "unicorn/prevent-abbreviations": [
-      "error",
-      {
-        replacements: {
-          args: false, // collision with JS "...arguments",
-          docs: false,
-          env: false,
-          params: false,
-          pkg: false,
-          prop: false,
-          props: false,
-          ref: false,
-        },
-      },
-    ],
+    "unicorn/prevent-abbreviations": "off",
     "unicorn/string-content": "off",
     "unicorn/throw-new-error": "error",
   },
