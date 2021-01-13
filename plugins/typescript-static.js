@@ -66,6 +66,7 @@ module.exports = {
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-type-alias": "off",
+    "@typescript-eslint/no-unnecessary-type-constraint": "error",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // extension rule
     "no-unused-vars": "off",

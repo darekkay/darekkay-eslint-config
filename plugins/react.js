@@ -34,8 +34,10 @@ module.exports = {
     "react/jsx-handler-names": "off",
     "react/jsx-key": "error",
     "react/jsx-max-depth": "off",
+    "react/jsx-newline": "off",
     "react/jsx-no-bind": "off",
     "react/jsx-no-comment-textnodes": "error",
+    "react/jsx-no-constructed-context-values": "error",
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-no-literals": "off",
     "react/jsx-no-script-url": "error",
@@ -106,7 +108,6 @@ module.exports = {
      * eslint-plugin-jsx-a11y
      * https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
      * */
-    "jsx-a11y/accessible-emoji": "off",
     "jsx-a11y/alt-text": "error",
     "jsx-a11y/anchor-has-content": "error",
     "jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],

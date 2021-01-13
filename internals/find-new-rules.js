@@ -27,6 +27,8 @@ eslintConfigs.forEach((eslintConfigPath) => {
   if (deprecatedRules.length > 0) {
     successful = false;
     logger.error(`Deprecated rules:`, deprecatedRules);
+  } else {
+    logger.success("No deprecated rules.");
   }
 
   // Find active rules that do not exist (anymore)
@@ -45,6 +47,8 @@ eslintConfigs.forEach((eslintConfigPath) => {
   if (removedRules.length > 0) {
     successful = false;
     logger.error(`Unknown or removed rules:`, removedRules);
+  } else {
+    logger.success("No unknown or removed rules.");
   }
 });
 

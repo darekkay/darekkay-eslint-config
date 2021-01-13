@@ -46,6 +46,7 @@ module.exports = {
     "no-unreachable-loop": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
+    "no-unsafe-optional-chaining": "error",
     "no-useless-backreference": "error",
     "require-atomic-updates": "error",
     "use-isnan": "error",
@@ -97,6 +98,7 @@ module.exports = {
     "no-new": "error",
     "no-new-func": "error",
     "no-new-wrappers": "error",
+    "no-nonoctal-decimal-escape": "error",
     "no-octal": "error",
     "no-octal-escape": "error",
     "no-param-reassign": "error",
@@ -220,6 +222,7 @@ module.exports = {
      * ECMAScript 6
      * https://eslint.org/docs/rules/#ecmascript-6
      */
+    "arrow-body-style": "off",
     "constructor-super": "error",
     "no-class-assign": "error",
     "no-const-assign": "error",
@@ -234,6 +237,7 @@ module.exports = {
     "no-useless-rename": "error",
     "no-var": "error",
     "object-shorthand": ["error", "properties"],
+    "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "prefer-destructuring": [
       "error",
