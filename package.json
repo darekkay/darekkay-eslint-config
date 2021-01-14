@@ -11,7 +11,7 @@
     "eslint-config-prettier": "7.1.0"
   },
   "devDependencies": {
-    "@darekkay/logger": "1.0.2",
+    "@darekkay/logger": "1.1.0",
     "@typescript-eslint/eslint-plugin": "4.13.0",
     "cross-env": "7.0.3",
     "eslint": "7.17.0",
