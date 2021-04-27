@@ -36,7 +36,7 @@ eslintConfigs.forEach((eslintConfigPath) => {
   const currentActiveRules = Object.entries(
     rules.getCurrentRulesDetailed()
   ).reduce((accumulator, [rule, ruleConfig]) => {
-    if (ruleConfig[0] !== "off") {
+    if (ruleConfig[0] !== "off" && ruleConfig[0] !== 0) {
       accumulator.push(rule);
     }
     return accumulator;
