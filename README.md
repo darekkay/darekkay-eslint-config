@@ -27,7 +27,13 @@ You may require additional packages, depending on the environment.
 Configuration for React projects.
 
 ```
-yarn add -D babel-eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-testing-library
+yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-testing-library
+```
+
+When using the Babel ESlint parser:
+
+```
+yarn add -D @babel/core @babel/preset-env @babel/preset-react @babel/eslint-parser
 ```
 
 ### Node

@@ -57,7 +57,7 @@ module.exports = {
         reservedFirst: ["key", "ref"],
       },
     ],
-    "react/jsx-uses-react": "off",
+    "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react/no-access-state-in-setstate": "error",
     "react/no-adjacent-inline-elements": "error",
