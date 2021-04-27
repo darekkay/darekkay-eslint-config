@@ -18,7 +18,7 @@ module.exports = {
     "./plugins/typescript-static",
     process.env.CI ? "./plugins/typescript-types" : null, // run slower rules only in CI
 
-    "prettier/@typescript-eslint",
+    "prettier",
   ].filter(Boolean),
 
   rules: {

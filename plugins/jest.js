@@ -52,6 +52,7 @@ module.exports = {
     "jest/prefer-todo": "off",
     "jest/require-to-throw-message": "off",
     "jest/require-top-level-describe": "error",
+    "jest/unbound-method": "off",
     "jest/valid-describe": "error",
     "jest/valid-expect": "error",
     "jest/valid-expect-in-promise": "error",

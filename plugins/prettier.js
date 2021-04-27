@@ -5,12 +5,7 @@
  *
  * */
 module.exports = {
-  extends: [
-    "prettier",
-    "prettier/react",
-    "prettier/unicorn",
-    "prettier/@typescript-eslint.js",
-  ],
+  extends: ["prettier"],
 
   plugins: ["prettier"],
 
