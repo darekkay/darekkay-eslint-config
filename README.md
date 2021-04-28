@@ -66,9 +66,9 @@ yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parse
 - `@darekkay/eslint-config/plugins/prettier`: Rules for [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier).
 - `@darekkay/eslint-config/plugins/react`: Rules for [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react), [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks), [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y).
 - `@darekkay/eslint-config/plugins/testing-library`: Rules for [eslint-plugin-testing-library](https://www.npmjs.com/package/eslint-plugin-testing-library).
-- `@darekkay/eslint-config/plugins/unicorn`: Rules for [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn).
 - `@darekkay/eslint-config/plugins/typescript-static`: Rules for [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) that do not require type information (= faster to run).
 - `@darekkay/eslint-config/plugins/typescript-types`: Rules for [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) that require type information (= slower to run).
+- `@darekkay/eslint-config/plugins/unicorn`: Rules for [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn).
 
 ## Errors vs. Warnings
 

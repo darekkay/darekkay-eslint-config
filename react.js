@@ -1,3 +1,5 @@
+const { FILE_PATTERN_TESTING } = require("./utils");
+
 /**
  * Configuration for React projects
  * */
@@ -7,10 +9,7 @@ module.exports = {
 
     "./plugins/unicorn",
     "./plugins/import",
-    "./plugins/jest",
-    "./plugins/jest-dom",
     "./plugins/react",
-    "./plugins/testing-library",
 
     "./plugins/prettier",
   ],
@@ -42,4 +41,16 @@ module.exports = {
   rules: {
     "import/no-nodejs-modules": "error",
   },
+
+  overrides: [
+    {
+      // Enable testing rules only for test files
+      files: FILE_PATTERN_TESTING,
+      extends: [
+        "./plugins/jest",
+        "./plugins/jest-dom",
+        "./plugins/testing-library",
+      ],
+    },
+  ],
 };
