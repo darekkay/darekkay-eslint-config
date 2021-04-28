@@ -15,7 +15,7 @@ module.exports = {
     "jest/expect-expect": [
       "error",
       {
-        assertFunctionNames: ["expect", "expectToThrow"],
+        assertFunctionNames: ["expect", "expectToThrow", "request.**.expect"],
       },
     ],
     "jest/lowercase-name": "off",
