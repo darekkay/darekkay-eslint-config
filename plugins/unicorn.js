@@ -64,9 +64,9 @@ module.exports = {
     "unicorn/prefer-keyboard-event-key": "error",
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-modern-dom-apis": "error",
-    "unicorn/prefer-module": "off",
+    "unicorn/prefer-module": "off", // enable with Node 14+ min version
     "unicorn/prefer-negative-index": "error",
-    "unicorn/prefer-node-protocol": "error",
+    "unicorn/prefer-node-protocol": "off", // enable with Node 14+ min version
     "unicorn/prefer-number-properties": "off",
     "unicorn/prefer-optional-catch-binding": "error",
     "unicorn/prefer-query-selector": "error",
