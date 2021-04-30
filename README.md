@@ -10,13 +10,21 @@ My shared ESLint configs.
 
 The configurations can be mixed, e.g. `React` + `TypeScript`.
 
-For all configurations, those packages have to be installed:
+For all configurations, install the following package:
 
 ```
-yarn add -D eslint @darekkay/eslint-config eslint-plugin-unicorn eslint-plugin-prettier
+yarn add -D @darekkay/eslint-config
 ```
 
-You may require additional packages, depending on the environment.
+You may require additional packages, depending on your environment:
+
+```
+# Babel
+yarn add -D @babel/core @babel/preset-env @babel/preset-react @babel/eslint-parser
+
+# TypeScript
+yarn add -D typescript
+```
 
 ## Configurations
 
@@ -26,25 +34,11 @@ You may require additional packages, depending on the environment.
 
 Configuration for React projects.
 
-```
-yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-jest eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-testing-library
-```
-
-When using the Babel ESlint parser:
-
-```
-yarn add -D @babel/core @babel/preset-env @babel/preset-react @babel/eslint-parser
-```
-
 ### Node
 
 - `@darekkay/eslint-config/nodejs`
 
 Configuration for Node (non-browser) projects.
-
-```
-yarn add -D eslint-plugin-node
-```
 
 ### TypeScript
 
@@ -52,13 +46,9 @@ yarn add -D eslint-plugin-node
 
 Configuration for TypeScript projects.
 
-```
-yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
-
 ### Common/plugin configs
 
-- `@darekkay/eslint-config/base`: Base rules for all configurations.
+- `@darekkay/eslint-config/base`: Native ESlint rules.
 - `@darekkay/eslint-config/plugins/import`: Rules for [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import).
 - `@darekkay/eslint-config/plugins/jest`: Rules for [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest).
 - `@darekkay/eslint-config/plugins/jest-dom`: Rules for [eslint-plugin-jest-dom](https://www.npmjs.com/package/eslint-plugin-jest-dom).
