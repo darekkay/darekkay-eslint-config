@@ -2,10 +2,14 @@
  * Configuration for TypeScript projects
  * */
 module.exports = {
+  parser: "@typescript-eslint/parser",
+
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
+
     // typescript-eslint specific options
+    project: "./tsconfig.json",
     warnOnUnsupportedTypeScriptVersion: true,
   },
 

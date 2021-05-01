@@ -1,4 +1,6 @@
 module.exports = {
+  IGNORE_PATTERNS: [".eslintrc.js", "jest.config.js"],
+
   FILE_PATTERN_TESTING: [
     "**/__tests__/**/*.[jt]s?(x)",
     "**/?(*.)+(spec|test).[jt]s?(x)",

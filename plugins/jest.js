@@ -39,7 +39,7 @@ module.exports = {
     "jest/no-restricted-matchers": "off",
     "jest/no-standalone-expect": "error",
     "jest/no-test-prefixes": "error",
-    "jest/no-test-return-statement": "error",
+    "jest/no-test-return-statement": "off", // mostly because of supertest
     "jest/prefer-called-with": "off",
     "jest/prefer-expect-assertions": "off",
     "jest/prefer-hooks-on-top": "error",

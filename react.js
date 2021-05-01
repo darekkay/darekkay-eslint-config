@@ -1,4 +1,4 @@
-const { FILE_PATTERN_TESTING } = require("./utils");
+const { IGNORE_PATTERNS, FILE_PATTERN_TESTING } = require("./utils");
 
 /**
  * Configuration for React projects
@@ -30,6 +30,8 @@ module.exports = {
   },
 
   root: true,
+
+  ignorePatterns: IGNORE_PATTERNS,
 
   settings: {
     react: {
