@@ -1,31 +1,39 @@
+const { FILE_PATTERN_TYPESCRIPT } = require("./utils");
+
 /**
  * Configuration for TypeScript projects
  * */
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  overrides: [
+    {
+      files: FILE_PATTERN_TYPESCRIPT,
 
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: "module",
+      parser: "@typescript-eslint/parser",
 
-    // typescript-eslint specific options
-    project: "./tsconfig.json",
-    warnOnUnsupportedTypeScriptVersion: true,
-  },
+      parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: "module",
 
-  plugins: ["@typescript-eslint"],
+        // typescript-eslint specific options
+        project: "./tsconfig.json",
+        warnOnUnsupportedTypeScriptVersion: true,
+      },
 
-  extends: [
-    "plugin:@typescript-eslint/eslint-recommended", // turns off rules that are useless in TypeScript
-    "plugin:import/typescript",
+      plugins: ["@typescript-eslint"],
 
-    "./plugins/typescript-static",
-    process.env.CI ? "./plugins/typescript-types" : null, // run slower rules only in CI
+      extends: [
+        "plugin:@typescript-eslint/eslint-recommended", // turns off rules that are useless in TypeScript
+        "plugin:import/typescript",
 
-    "prettier",
-  ].filter(Boolean),
+        "./plugins/typescript-static",
+        process.env.CI ? "./plugins/typescript-types" : null, // run slower rules only in CI
 
-  rules: {
-    "node/no-unsupported-features/es-syntax": "off",
-  },
+        "prettier",
+      ].filter(Boolean),
+
+      rules: {
+        "node/no-unsupported-features/es-syntax": "off",
+      },
+    },
+  ],
 };
