@@ -45,6 +45,14 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "peerDependencies": {
+    "typescript": "4.x"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/darekkay/darekkay-eslint-config.git"
