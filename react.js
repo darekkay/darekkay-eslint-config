@@ -1,4 +1,9 @@
-const { IGNORE_PATTERNS, FILE_PATTERN_TESTING } = require("./utils");
+const {
+  IGNORE_PATTERNS,
+  FILE_PATTERN_TESTING,
+  FILE_PATTERN_INTERNALS,
+  FILE_PATTERN_CONFIG,
+} = require("./utils");
 
 /**
  * Configuration for React projects
@@ -53,6 +58,20 @@ module.exports = {
         "./plugins/jest-dom",
         "./plugins/testing-library",
       ],
+    },
+    {
+      // Disable rules for non-production files
+      files: FILE_PATTERN_INTERNALS,
+      rules: {
+        "import/no-nodejs-modules": "off",
+      },
+    },
+    {
+      // Disable rules for configuration files
+      files: FILE_PATTERN_CONFIG,
+      rules: {
+        "import/no-nodejs-modules": "off",
+      },
     },
   ],
 };

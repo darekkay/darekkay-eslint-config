@@ -1,4 +1,3 @@
-/* eslint-disable node/no-unpublished-require */
 const findRules = require("eslint-find-rules");
 const logger = require("@darekkay/logger");
 

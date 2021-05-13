@@ -1,4 +1,4 @@
-const { FILE_PATTERN_TYPESCRIPT } = require("./utils");
+const { FILE_PATTERN_TYPESCRIPT, FILE_PATTERN_INTERNALS } = require("./utils");
 
 /**
  * Configuration for TypeScript projects
@@ -33,6 +33,13 @@ module.exports = {
 
       rules: {
         "node/no-unsupported-features/es-syntax": "off",
+      },
+    },
+    {
+      // Disable rules for non-production files
+      files: FILE_PATTERN_INTERNALS,
+      rules: {
+        "@typescript-eslint/no-require-imports": "off",
       },
     },
   ],
