@@ -21,6 +21,7 @@ module.exports = {
     "testing-library/no-node-access": "error",
     "testing-library/no-promise-in-fire-event": "error",
     "testing-library/no-render-in-setup": "off",
+    "testing-library/no-unnecessary-act": "error",
     "testing-library/no-wait-for-empty-callback": "error",
     "testing-library/no-wait-for-multiple-assertions": "error",
     "testing-library/no-wait-for-side-effects": "error",
