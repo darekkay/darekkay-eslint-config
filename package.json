@@ -1,7 +1,7 @@
 {
   "name": "@darekkay/eslint-config",
   "description": "My shared ESLint configs",
-  "version": "2.6.6",
+  "version": "2.6.7",
   "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
   "bugs": {
     "url": "https://github.com/darekkay/darekkay-eslint-config/issues",
