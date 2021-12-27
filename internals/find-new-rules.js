@@ -8,9 +8,9 @@ process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = "true"; // exclude deprecated
 
 let successful = true;
 
-eslintConfigs.forEach((eslintConfigPath) => {
+eslintConfigs.forEach(async (eslintConfigPath) => {
   logger.info(`Evaluating rules for: ${eslintConfigPath}`);
-  const rules = findRules(eslintConfigPath);
+  const rules = await findRules(eslintConfigPath);
 
   // Find new rules that are not yet explicitly used
   const newRules = rules.getUnusedRules();

@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     "@typescript-eslint/await-thenable": "off",
     "dot-notation": "off",
+    "@typescript-eslint/consistent-type-exports": "off",
     "@typescript-eslint/dot-notation": "error", // extension rule
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-base-to-string": "error",
@@ -17,6 +18,7 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-meaningless-void-operator": "off",
     "@typescript-eslint/no-misused-promises": "error",
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
@@ -36,6 +38,7 @@ module.exports = {
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
     "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/prefer-return-this-type": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/require-array-sort-compare": "error",

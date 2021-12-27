@@ -15,7 +15,7 @@ module.exports = {
     "testing-library/no-await-sync-events": "error",
     "testing-library/no-await-sync-query": "off",
     "testing-library/no-container": "off",
-    "testing-library/no-debug": "error",
+    "testing-library/no-debugging-utils": "error",
     "testing-library/no-dom-import": ["error", "react"],
     "testing-library/no-manual-cleanup": "error",
     "testing-library/no-node-access": "error",
