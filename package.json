@@ -13,7 +13,7 @@
     "eslint": "8.5.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-jest": "25.3.0",
+    "eslint-plugin-jest": "25.3.2",
     "eslint-plugin-jest-dom": "4.0.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-node": "11.1.0",
@@ -24,7 +24,7 @@
     "eslint-plugin-unicorn": "39.0.0"
   },
   "devDependencies": {
-    "@darekkay/logger": "1.1.2",
+    "@darekkay/logger": "1.2.0",
     "cross-env": "7.0.3",
     "eslint-find-rules": "4.0.0",
     "prettier": "2.5.1",

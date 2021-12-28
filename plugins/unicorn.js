@@ -70,7 +70,7 @@ module.exports = {
     "unicorn/prefer-dom-node-dataset": "error",
     "unicorn/prefer-dom-node-remove": "error",
     "unicorn/prefer-dom-node-text-content": "error",
-    "unicorn/prefer-export-from": ["error", { ignoreUsedVariables: true }],
+    "unicorn/prefer-export-from": "off",
     "unicorn/prefer-includes": "error",
     "unicorn/prefer-keyboard-event-key": "error",
     "unicorn/prefer-math-trunc": "error",
@@ -79,7 +79,7 @@ module.exports = {
     "unicorn/prefer-negative-index": "error",
     "unicorn/prefer-node-protocol": "off", // enable with Node 14+ min version
     "unicorn/prefer-number-properties": "off",
-    "unicorn/prefer-object-from-entries": "error",
+    "unicorn/prefer-object-from-entries": "off",
     "unicorn/prefer-object-has-own": "error",
     "unicorn/prefer-optional-catch-binding": "error",
     "unicorn/prefer-prototype-methods": "error",
