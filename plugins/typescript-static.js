@@ -83,6 +83,7 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "error", // extension rule
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // extension rule
+    "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/no-var-requires": "error",
     "padding-line-between-statements": "off",
     "@typescript-eslint/padding-line-between-statements": "off",

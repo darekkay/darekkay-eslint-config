@@ -24,6 +24,8 @@ module.exports = {
     "react/forbid-foreign-prop-types": "off",
     "react/forbid-prop-types": "off",
     "react/function-component-definition": "off",
+    "react/hook-use-state": "off",
+    "react/iframe-missing-sandbox": "error",
     "react/jsx-boolean-value": ["error", "never"],
     "react/jsx-curly-brace-presence": [
       "error",

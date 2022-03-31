@@ -20,6 +20,7 @@ module.exports = {
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-meaningless-void-operator": "off",
     "@typescript-eslint/no-misused-promises": "error",
+    "@typescript-eslint/no-redundant-type-constituents": "error",
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
