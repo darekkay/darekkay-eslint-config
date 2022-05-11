@@ -37,6 +37,7 @@ module.exports = {
     "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error", // extension rule
     "no-duplicate-imports": "off",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-duplicate-imports": "error",
     "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/no-empty-function": "off", // extension rule
@@ -58,7 +59,6 @@ module.exports = {
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-parameter-properties": "off",
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-require-imports": "error",
@@ -87,6 +87,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "error",
     "padding-line-between-statements": "off",
     "@typescript-eslint/padding-line-between-statements": "off",
+    "@typescript-eslint/parameter-properties": "off",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-for-of": "error",

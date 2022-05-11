@@ -17,6 +17,7 @@ module.exports = {
     "testing-library/no-container": "off",
     "testing-library/no-debugging-utils": "error",
     "testing-library/no-dom-import": ["error", "react"],
+    "testing-library/no-global-regexp-flag-in-query": "error",
     "testing-library/no-manual-cleanup": "error",
     "testing-library/no-node-access": "error",
     "testing-library/no-promise-in-fire-event": "error",

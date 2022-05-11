@@ -147,6 +147,7 @@ module.exports = {
      * https://eslint.org/docs/rules/#variables
      */
     "init-declarations": "off",
+    "no-constant-binary-expression": "error",
     "no-delete-var": "error",
     "no-label-var": "error",
     "no-restricted-globals": "off",
