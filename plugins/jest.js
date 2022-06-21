@@ -46,6 +46,7 @@ module.exports = {
     "jest/prefer-equality-matcher": "error",
     "jest/prefer-expect-assertions": "off",
     "jest/prefer-expect-resolves": "error",
+    "jest/prefer-hooks-in-order": "off",
     "jest/prefer-hooks-on-top": "error",
     "jest/prefer-lowercase-title": ["error", { ignore: ["describe"] }],
     "jest/prefer-snapshot-hint": "off",
