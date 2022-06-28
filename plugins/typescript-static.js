@@ -21,6 +21,9 @@ module.exports = {
     "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
     "@typescript-eslint/consistent-type-assertions": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
+    // TODO: enable rule when the following issues had been addressed:
+    // https://github.com/typescript-eslint/typescript-eslint/issues/4338
+    // https://github.com/typescript-eslint/typescript-eslint/issues/4915
     "@typescript-eslint/consistent-type-imports": "off",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error", // extension rule
