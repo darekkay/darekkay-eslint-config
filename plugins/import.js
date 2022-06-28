@@ -27,7 +27,7 @@ module.exports = {
     "import/group-exports": "off",
     "import/max-dependencies": "off",
     "import/named": "error",
-    "import/namespace": "error",
+    "import/namespace": "off", // https://github.com/import-js/eslint-plugin-import/issues/2340
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
     "import/no-amd": "error",
