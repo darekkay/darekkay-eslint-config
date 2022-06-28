@@ -33,6 +33,13 @@ module.exports = {
 
       rules: {
         "node/no-unsupported-features/es-syntax": "off",
+
+        // Disable unnecessary "import" rules
+        // https://typescript-eslint.io/docs/linting/troubleshooting/#eslint-plugin-import
+        "import/named": "off",
+        "import/namespace": "off",
+        "import/default": "off",
+        "import/no-named-as-default-member": "off",
       },
     },
     {
