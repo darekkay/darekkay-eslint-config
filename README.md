@@ -53,7 +53,6 @@ Configuration for TypeScript projects.
 - `@darekkay/eslint-config/plugins/jest`: Rules for [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest).
 - `@darekkay/eslint-config/plugins/jest-dom`: Rules for [eslint-plugin-jest-dom](https://www.npmjs.com/package/eslint-plugin-jest-dom).
 - `@darekkay/eslint-config/plugins/node`: Rules for [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node).
-- `@darekkay/eslint-config/plugins/prettier`: Rules for [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier).
 - `@darekkay/eslint-config/plugins/react`: Rules for [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react), [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks), [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y).
 - `@darekkay/eslint-config/plugins/testing-library`: Rules for [eslint-plugin-testing-library](https://www.npmjs.com/package/eslint-plugin-testing-library).
 - `@darekkay/eslint-config/plugins/typescript-static`: Rules for [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) that do not require type information (= faster to run).

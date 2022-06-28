@@ -12,7 +12,7 @@ module.exports = {
     "../plugins/typescript-types.js",
     "../plugins/unicorn.js",
 
-    "../plugins/prettier.js",
+    "prettier",
   ],
 
   plugins: ["@typescript-eslint"],

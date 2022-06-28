@@ -16,7 +16,7 @@ module.exports = {
     "./plugins/import",
     "./plugins/react",
 
-    "./plugins/prettier",
+    "prettier",
   ],
 
   env: {

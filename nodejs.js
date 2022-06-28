@@ -16,7 +16,7 @@ module.exports = {
     "./plugins/node",
     "./plugins/unicorn",
 
-    "./plugins/prettier",
+    "prettier",
   ],
 
   env: {
