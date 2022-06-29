@@ -28,25 +28,15 @@ yarn add -D typescript
 
 ## Configurations
 
-### React
+Those configurations are ready-to-use:
 
-- `@darekkay/eslint-config/react`
-
-Configuration for React projects.
-
-### Node
-
-- `@darekkay/eslint-config/nodejs`
-
-Configuration for Node (non-browser) projects.
-
-### TypeScript
-
-- `@darekkay/eslint-config/typescript`
-
-Configuration for TypeScript projects.
+- `@darekkay/eslint-config/react`: Config for React projects.
+- `@darekkay/eslint-config/nodejs`: Config for Node (non-browser) projects. 
+- `@darekkay/eslint-config/typescript`: Config for TypeScript projects.
 
 ### Common/plugin configs
+
+Each plugin config can be imported individually:
 
 - `@darekkay/eslint-config/base`: Native ESlint rules.
 - `@darekkay/eslint-config/plugins/import`: Rules for [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import).
@@ -63,11 +53,20 @@ Configuration for TypeScript projects.
 
 ESLint _warnings_ can and often will be easily ignored. That's why this config treats all ESLint violations as _errors_.
 
-## Publish steps
+## Similar projects
 
-```
-$ npm publish --access public
-```
+- [eslint-config-canonical](https://github.com/gajus/eslint-config-canonical)
+- [eslint-config-kentcdodds](https://github.com/kentcdodds/eslint-config-kentcdodds)
+
+### Unused plugins
+
+There are some more useful ESLint plugins that are not (yet) part of this project.
+
+- [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+- [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc)
+- [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
+- [eslint-plugin-yml](https://github.com/ota-meshi/eslint-plugin-yml)
+
 
 ## Resources
 
