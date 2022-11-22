@@ -256,5 +256,10 @@ module.exports = {
     "require-yield": "error",
     "sort-imports": "off",
     "symbol-description": "error",
+
+    // TODO: Reorder rules according to the new ESLint grouping
+    "logical-assignment-operators": "off",
+    "no-empty-static-block": "error",
+    "no-new-native-nonconstructor": "error",
   },
 };

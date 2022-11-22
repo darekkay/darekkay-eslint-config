@@ -72,6 +72,7 @@ module.exports = {
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
+    "@typescript-eslint/no-unsafe-declaration-merging": "error",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // extension rule
     "no-unused-vars": "off",
@@ -99,6 +100,7 @@ module.exports = {
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-ts-expect-error": "error",
+    "@typescript-eslint/sort-type-constituents": "off",
     "@typescript-eslint/triple-slash-reference": "error",
     "@typescript-eslint/typedef": "off",
     "@typescript-eslint/unified-signatures": "error",

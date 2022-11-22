@@ -48,7 +48,6 @@ module.exports = {
     "@typescript-eslint/restrict-template-expressions": "off",
     "no-return-await": "off",
     "@typescript-eslint/return-await": "error", // extension rule
-    "@typescript-eslint/sort-type-union-intersection-members": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/unbound-method": "off",
