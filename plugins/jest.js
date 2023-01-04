@@ -42,6 +42,7 @@ module.exports = {
     "jest/no-standalone-expect": "error",
     "jest/no-test-prefixes": "error",
     "jest/no-test-return-statement": "off", // mostly because of supertest
+    "jest/no-untyped-mock-factory": "off",
     "jest/prefer-called-with": "off",
     "jest/prefer-comparison-matcher": "error",
     "jest/prefer-each": "off",
