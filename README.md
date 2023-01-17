@@ -1,7 +1,7 @@
 # @darekkay/eslint-config
 
 [![npm (scoped)](https://img.shields.io/npm/v/@darekkay/eslint-config?style=flat-square)](https://www.npmjs.com/package/@darekkay/eslint-config)
-[![Build](https://img.shields.io/github/workflow/status/darekkay/darekkay-eslint-config/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/darekkay-eslint-config/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/darekkay/darekkay-eslint-config/ci.yml?branch=master&style=flat-square)](https://github.com/darekkay/darekkay-eslint-config/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/darekkay/darekkay-eslint-config/blob/master/LICENSE)
 
 My shared ESLint configs.
