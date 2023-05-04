@@ -3,7 +3,7 @@
  * Rules for @typescript-eslint/eslint-plugin
  * Contains only rules that do not require type information (= faster to run)
  *
- * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules
+ * https://typescript-eslint.io/rules/
  *
  * */
 module.exports = {
@@ -48,6 +48,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
+    "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-inferrable-types": "error",
     "no-invalid-this": "off",
     "@typescript-eslint/no-invalid-this": "error", // extension rule

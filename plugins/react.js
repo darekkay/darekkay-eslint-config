@@ -53,7 +53,6 @@ module.exports = {
     "react/jsx-no-useless-fragment": "off",
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-spreading": "off",
-    "react/jsx-sort-default-props": "off",
     "react/jsx-sort-props": [
       "error",
       {
@@ -79,6 +78,7 @@ module.exports = {
     "react/no-is-mounted": "error",
     "react/no-multi-comp": "off",
     "react/no-namespace": "error",
+    "react/no-object-type-as-default-prop": "error",
     "react/no-redundant-should-component-update": "error",
     "react/no-render-return-value": "error",
     "react/no-set-state": "off",
@@ -104,6 +104,7 @@ module.exports = {
     "react/require-render-return": "error",
     "react/self-closing-comp": "error",
     "react/sort-comp": "off",
+    "react/sort-default-props": "off",
     "react/sort-prop-types": "off",
     "react/state-in-constructor": "off",
     "react/static-property-placement": "off",
@@ -121,7 +122,9 @@ module.exports = {
      * eslint-plugin-jsx-a11y
      * https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
      * */
+
     "jsx-a11y/alt-text": "error",
+    "jsx-a11y/anchor-ambiguous-text": "error",
     "jsx-a11y/anchor-has-content": "error",
     "jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
     "jsx-a11y/aria-activedescendant-has-tabindex": "error",
@@ -142,6 +145,7 @@ module.exports = {
     "jsx-a11y/media-has-caption": "off",
     "jsx-a11y/mouse-events-have-key-events": "error",
     "jsx-a11y/no-access-key": "error",
+    "jsx-a11y/no-aria-hidden-on-focusable": "error",
     "jsx-a11y/no-autofocus": "off",
     "jsx-a11y/no-distracting-elements": "error",
     "jsx-a11y/no-interactive-element-to-noninteractive-role": "error",
@@ -150,6 +154,7 @@ module.exports = {
     "jsx-a11y/no-noninteractive-tabindex": "error",
     "jsx-a11y/no-redundant-roles": "error",
     "jsx-a11y/no-static-element-interactions": "error",
+    "jsx-a11y/prefer-tag-over-role": "error",
     "jsx-a11y/role-has-required-aria-props": "error",
     "jsx-a11y/role-supports-aria-props": "error",
     "jsx-a11y/scope": "error",

@@ -18,6 +18,7 @@ module.exports = {
   },
 
   rules: {
+    "import/consistent-type-specifier-style": "off",
     "import/default": "off",
     "import/dynamic-import-chunkname": "off",
     "import/export": "error",
@@ -38,6 +39,7 @@ module.exports = {
     "import/no-deprecated": "error",
     "import/no-duplicates": "error",
     "import/no-dynamic-require": "off",
+    "import/no-empty-named-blocks": "off",
     "import/no-extraneous-dependencies": "error",
     "import/no-import-module-exports": "off",
     "import/no-internal-modules": "off",

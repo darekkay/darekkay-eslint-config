@@ -3,7 +3,7 @@
  * Rules for @typescript-eslint/eslint-plugin
  * Contains only rules that require type information (= slower to run)
  *
- * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules
+ * https://typescript-eslint.io/rules/
  *
  * */
 module.exports = {
@@ -15,11 +15,13 @@ module.exports = {
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-meaningless-void-operator": "off",
     "@typescript-eslint/no-misused-promises": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-redundant-type-constituents": "error",
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
@@ -30,6 +32,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-argument": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/non-nullable-type-assertion-style": "off",
