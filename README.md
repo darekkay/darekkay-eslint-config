@@ -31,7 +31,7 @@ yarn add -D typescript
 Those configurations are ready-to-use:
 
 - `@darekkay/eslint-config/react`: Config for React projects.
-- `@darekkay/eslint-config/nodejs`: Config for Node (non-browser) projects. 
+- `@darekkay/eslint-config/nodejs`: Config for Node (non-browser) projects.
 - `@darekkay/eslint-config/typescript`: Config for TypeScript projects.
 
 ### Common/plugin configs
@@ -66,7 +66,6 @@ There are some more useful ESLint plugins that are not (yet) part of this projec
 - [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc)
 - [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
 - [eslint-plugin-yml](https://github.com/ota-meshi/eslint-plugin-yml)
-
 
 ## Resources
 
