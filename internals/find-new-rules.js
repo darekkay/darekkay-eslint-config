@@ -1,5 +1,5 @@
+/* eslint-disable no-console */
 const findRules = require("eslint-find-rules");
-const logger = require("@darekkay/logger");
 
 const eslintConfigs = ["internals/config-all.js"];
 
@@ -9,25 +9,25 @@ process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = "true"; // exclude deprecated
 let successful = true;
 
 eslintConfigs.forEach(async (eslintConfigPath) => {
-  logger.info(`Evaluating rules for: ${eslintConfigPath}`);
+  console.info(`Evaluating rules for: ${eslintConfigPath}`);
   const rules = await findRules(eslintConfigPath);
 
   // Find new rules that are not yet explicitly used
   const newRules = rules.getUnusedRules();
   if (newRules.length > 0) {
     successful = false;
-    logger.error(`New rules available:`, newRules);
+    console.error(`New rules available:`, newRules);
   } else {
-    logger.success("No new rules available.");
+    console.info("✓ No new rules available.");
   }
 
   // Find deprecated rules
   const deprecatedRules = rules.getDeprecatedRules();
   if (deprecatedRules.length > 0) {
     successful = false;
-    logger.error(`Deprecated rules:`, deprecatedRules);
+    console.error(`Deprecated rules:`, deprecatedRules);
   } else {
-    logger.success("No deprecated rules.");
+    console.info("✓ No deprecated rules.");
   }
 
   // Find active rules that do not exist (anymore)
@@ -45,9 +45,9 @@ eslintConfigs.forEach(async (eslintConfigPath) => {
   );
   if (removedRules.length > 0) {
     successful = false;
-    logger.error(`Unknown or removed rules:`, removedRules);
+    console.error(`Unknown or removed rules:`, removedRules);
   } else {
-    logger.success("No unknown or removed rules.");
+    console.info("✓ No unknown or removed rules.");
   }
 });
 
