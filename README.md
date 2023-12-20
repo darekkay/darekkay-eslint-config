@@ -13,17 +13,17 @@ The configurations can be mixed, e.g. `React` + `TypeScript`.
 For all configurations, install the following package:
 
 ```
-yarn add -D @darekkay/eslint-config
+npm install --save-dev @darekkay/eslint-config
 ```
 
 You may require additional packages, depending on your environment:
 
 ```
 # Babel
-yarn add -D @babel/core @babel/preset-env @babel/preset-react @babel/eslint-parser
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/eslint-parser
 
 # TypeScript
-yarn add -D typescript
+npm install --save-dev typescript
 ```
 
 ## Configurations
