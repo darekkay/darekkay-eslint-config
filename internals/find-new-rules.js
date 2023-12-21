@@ -33,7 +33,7 @@ eslintConfigs.forEach(async (eslintConfigPath) => {
   // Find active rules that do not exist (anymore)
   const availableRules = rules.getAllAvailableRules();
   const currentActiveRules = Object.entries(
-    rules.getCurrentRulesDetailed()
+    rules.getCurrentRulesDetailed(),
   ).reduce((accumulator, [rule, ruleConfig]) => {
     if (ruleConfig[0] !== "off" && ruleConfig[0] !== 0) {
       accumulator.push(rule);
@@ -41,7 +41,7 @@ eslintConfigs.forEach(async (eslintConfigPath) => {
     return accumulator;
   }, []);
   const removedRules = currentActiveRules.filter(
-    (rule) => !availableRules.includes(rule)
+    (rule) => !availableRules.includes(rule),
   );
   if (removedRules.length > 0) {
     successful = false;
