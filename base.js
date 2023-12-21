@@ -107,7 +107,6 @@ module.exports = {
     "no-redeclare": "error",
     "no-restricted-properties": "off",
     "no-return-assign": "error",
-    "no-return-await": "error",
     "no-script-url": "error",
     "no-self-assign": "error",
     "no-self-compare": "error",
@@ -180,15 +179,12 @@ module.exports = {
     "id-denylist": "off",
     "id-length": "off",
     "id-match": "off",
-    "line-comment-position": "off",
-    "lines-between-class-members": "error",
     "max-depth": ["error", 5],
     "max-lines": "off",
     "max-lines-per-function": ["error", 150],
     "max-nested-callbacks": ["error", 7],
     "max-params": ["error", 7],
     "max-statements": ["error", 40],
-    "max-statements-per-line": "off",
     "multiline-comment-style": "off",
     "new-cap": "error",
     "no-array-constructor": "error",
@@ -199,7 +195,6 @@ module.exports = {
     "no-multi-assign": "error",
     "no-negated-condition": "off",
     "no-nested-ternary": "error",
-    "no-new-object": "error",
     "no-plusplus": "off",
     "no-restricted-syntax": "off",
     "no-ternary": "off",
@@ -207,19 +202,17 @@ module.exports = {
     "no-unneeded-ternary": "error",
     "one-var": ["error", "never"],
     "operator-assignment": "off",
-    "padding-line-between-statements": "off",
     "prefer-exponentiation-operator": "error",
     "prefer-object-has-own": "error",
     "prefer-object-spread": "off",
     "sort-keys": "off",
     "sort-vars": "off",
-    "spaced-comment": [
-      "error",
-      "always",
-      {
-        markers: ["/"], // allow tripple slash comments, e.g. for TypeScript
-      },
-    ],
+
+    /**
+     * Layout & Formatting
+     */
+    "line-comment-position": "off",
+    "unicode-bom": "off",
 
     /**
      * ECMAScript 6
@@ -261,5 +254,6 @@ module.exports = {
     "logical-assignment-operators": "off",
     "no-empty-static-block": "error",
     "no-new-native-nonconstructor": "error",
+    "no-object-constructor": "error",
   },
 };

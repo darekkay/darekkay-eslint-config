@@ -17,6 +17,7 @@ module.exports = {
     "@typescript-eslint/ban-tslint-comment": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/class-literal-property-style": "off",
+    "@typescript-eslint/class-methods-use-this": "off",
     "@typescript-eslint/consistent-generic-constructors": "off",
     "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
     "@typescript-eslint/consistent-type-assertions": "off",
@@ -31,8 +32,9 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/init-declarations": "off", // extension rule
-    "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": "error", // extension rule
+    "max-params": "off",
+    "@typescript-eslint/max-params": ["error", { max: 7 }], // extension rule
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/method-signature-style": "off",
     "no-array-constructor": "off",
@@ -71,7 +73,6 @@ module.exports = {
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-this-alias": "error",
-    "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
     "@typescript-eslint/no-unsafe-declaration-merging": "error",
     "no-unused-expressions": "off",
@@ -90,7 +91,6 @@ module.exports = {
     "@typescript-eslint/no-useless-constructor": "error", // extension rule
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/no-var-requires": "error",
-    "padding-line-between-statements": "off",
     "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "off",
     "@typescript-eslint/prefer-as-const": "error",

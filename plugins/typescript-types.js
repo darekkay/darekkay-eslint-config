@@ -35,7 +35,17 @@ module.exports = {
     "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "off",
+    "prefer-destructuring": "off",
+    "@typescript-eslint/prefer-destructuring": [
+      "error",
+      {
+        object: true,
+        array: false,
+      },
+    ], // extension rule
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-readonly": "error",
@@ -49,8 +59,7 @@ module.exports = {
     "@typescript-eslint/require-await": "off", // extension rule
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": "off",
-    "no-return-await": "off",
-    "@typescript-eslint/return-await": "error", // extension rule
+    "@typescript-eslint/return-await": "off", // extension rule
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/unbound-method": "off",
