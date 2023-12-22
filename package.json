@@ -44,7 +44,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "typescript": "4.x"
+    "typescript": "*"
   },
   "peerDependenciesMeta": {
     "typescript": {
