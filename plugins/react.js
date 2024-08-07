@@ -48,7 +48,7 @@ module.exports = {
     "react/jsx-no-leaked-render": "off",
     "react/jsx-no-literals": "off",
     "react/jsx-no-script-url": "error",
-    "react/jsx-no-target-blank": "error",
+    "react/jsx-no-target-blank": "off",
     "react/jsx-no-undef": "error",
     "react/jsx-no-useless-fragment": "off",
     "react/jsx-pascal-case": "error",
