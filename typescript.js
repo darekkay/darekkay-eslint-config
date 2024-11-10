@@ -15,7 +15,7 @@ module.exports = {
         sourceType: "module",
 
         // typescript-eslint specific options
-        project: "./tsconfig.json",
+        projectService: true,
         warnOnUnsupportedTypeScriptVersion: true,
       },
 

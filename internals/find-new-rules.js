@@ -4,7 +4,6 @@ const findRules = require("eslint-find-rules");
 const eslintConfigs = ["internals/config-all.js"];
 
 process.env.CI = "true"; // include rules that are only executed in CI environment
-process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = "true"; // exclude deprecated prettier rules
 
 let successful = true;
 
@@ -35,7 +34,7 @@ eslintConfigs.forEach(async (eslintConfigPath) => {
   const currentActiveRules = Object.entries(
     rules.getCurrentRulesDetailed(),
   ).reduce((accumulator, [rule, ruleConfig]) => {
-    if (ruleConfig[0] !== "off" && ruleConfig[0] !== 0) {
+    if (ruleConfig[0] !== 0) {
       accumulator.push(rule);
     }
     return accumulator;

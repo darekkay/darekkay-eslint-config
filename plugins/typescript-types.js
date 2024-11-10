@@ -10,11 +10,15 @@ module.exports = {
   rules: {
     "@typescript-eslint/await-thenable": "off",
     "dot-notation": "off",
+    "consistent-return": "off",
+    "@typescript-eslint/consistent-return": "error", // extension rule
     "@typescript-eslint/consistent-type-exports": "off",
     "@typescript-eslint/dot-notation": "error", // extension rule
     "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-array-delete": "error",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-deprecated": "off",
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-for-in-array": "error",
@@ -23,12 +27,13 @@ module.exports = {
     "@typescript-eslint/no-misused-promises": "error",
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-redundant-type-constituents": "error",
-    "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
     "@typescript-eslint/no-unnecessary-type-arguments": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "off",
     "@typescript-eslint/no-unsafe-argument": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-call": "off",
@@ -36,8 +41,8 @@ module.exports = {
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unsafe-unary-minus": "error",
-    "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "off",
+    "@typescript-eslint/only-throw-error": "error",
     "prefer-destructuring": "off",
     "@typescript-eslint/prefer-destructuring": [
       "error",
@@ -46,8 +51,10 @@ module.exports = {
         array: false,
       },
     ], // extension rule
+    "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-promise-reject-errors": "off", // extension rule
     "@typescript-eslint/prefer-readonly": "error",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
@@ -63,5 +70,6 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/unbound-method": "off",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
   },
 };

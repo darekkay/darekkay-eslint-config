@@ -15,6 +15,7 @@ module.exports = {
      * */
     "react/boolean-prop-naming": "off",
     "react/button-has-type": "error",
+    "react/checked-requires-onchange-or-readonly": "off",
     "react/default-props-match-prop-types": "off",
     "react/destructuring-assignment": "off",
     "react/display-name": "error",
@@ -23,6 +24,7 @@ module.exports = {
     "react/forbid-elements": "off",
     "react/forbid-foreign-prop-types": "off",
     "react/forbid-prop-types": "off",
+    "react/forward-ref-uses-ref": "error",
     "react/function-component-definition": "off",
     "react/hook-use-state": "off",
     "react/iframe-missing-sandbox": "error",
@@ -64,6 +66,7 @@ module.exports = {
     "react/jsx-one-expression-per-line": "off", // handled by prettier
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-multi-spaces": "off", // handled by prettier
+    "react/jsx-props-no-spread-multi": "error",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-sort-props": [
       "error",

@@ -8,27 +8,27 @@
     "email": "hello@darekkay.com"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.16.0",
-    "@typescript-eslint/parser": "6.16.0",
-    "eslint": "8.56.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-jest": "27.6.0",
-    "eslint-plugin-jest-dom": "5.1.0",
-    "eslint-plugin-jsx-a11y": "6.8.0",
+    "@typescript-eslint/eslint-plugin": "8.13.0",
+    "@typescript-eslint/parser": "8.13.0",
+    "eslint": "8.57.1",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jest": "28.9.0",
+    "eslint-plugin-jest-dom": "5.4.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-react": "7.33.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-testing-library": "6.2.0",
-    "eslint-plugin-unicorn": "50.0.1"
+    "eslint-plugin-react": "7.37.2",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "eslint-plugin-testing-library": "6.4.0",
+    "eslint-plugin-unicorn": "56.0.0"
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "eslint-find-rules": "4.1.0",
-    "prettier": "3.1.1",
-    "typescript": "5.3.3"
+    "eslint-find-rules": "4.2.0",
+    "prettier": "3.3.3",
+    "typescript": "5.6.3"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.18.0"
   },
   "files": [
     "/plugins/**",
@@ -43,7 +43,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "typescript": "*"
+    "typescript": ">=4.7.4"
   },
   "peerDependenciesMeta": {
     "typescript": {

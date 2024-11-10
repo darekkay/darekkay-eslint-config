@@ -14,11 +14,8 @@ module.exports = {
     ],
     "jest/expect-expect": [
       "error",
-      {
-        assertFunctionNames: ["expect", "expectToThrow", "request.**.expect"],
-      },
+      { assertFunctionNames: ["expect", "expectToThrow", "request.**.expect"] },
     ],
-    "jest/lowercase-name": "off",
     "jest/max-expects": "off",
     "jest/max-nested-describe": ["error", { max: 3 }],
     "jest/no-alias-methods": "off",
@@ -44,6 +41,14 @@ module.exports = {
     "jest/no-test-prefixes": "error",
     "jest/no-test-return-statement": "off", // mostly because of supertest
     "jest/no-untyped-mock-factory": "off",
+    "jest/padding-around-after-all-blocks": "off", // handled by prettier
+    "jest/padding-around-after-each-blocks": "off", // handled by prettier
+    "jest/padding-around-all": "off", // handled by prettier
+    "jest/padding-around-before-all-blocks": "off", // handled by prettier
+    "jest/padding-around-before-each-blocks": "off", // handled by prettier
+    "jest/padding-around-describe-blocks": "off", // handled by prettier
+    "jest/padding-around-expect-groups": "off", // handled by prettier
+    "jest/padding-around-test-blocks": "off", // handled by prettier
     "jest/prefer-called-with": "off",
     "jest/prefer-comparison-matcher": "error",
     "jest/prefer-each": "off",
@@ -52,14 +57,14 @@ module.exports = {
     "jest/prefer-expect-resolves": "error",
     "jest/prefer-hooks-in-order": "off",
     "jest/prefer-hooks-on-top": "error",
+    "jest/prefer-importing-jest-globals": "off",
+    "jest/prefer-jest-mocked": "error",
     "jest/prefer-lowercase-title": ["error", { ignore: ["describe"] }],
     "jest/prefer-mock-promise-shorthand": "error",
     "jest/prefer-snapshot-hint": "off",
     "jest/prefer-spy-on": "off",
     "jest/prefer-strict-equal": "off",
     "jest/prefer-to-be": "error",
-    "jest/prefer-to-be-null": "off",
-    "jest/prefer-to-be-undefined": "off",
     "jest/prefer-to-contain": "error",
     "jest/prefer-to-have-length": "error",
     "jest/prefer-todo": "off",

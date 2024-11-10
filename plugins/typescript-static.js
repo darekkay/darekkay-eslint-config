@@ -13,9 +13,11 @@ module.exports = {
 
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      { "ts-expect-error": "allow-with-description" },
+    ],
     "@typescript-eslint/ban-tslint-comment": "off",
-    "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/class-literal-property-style": "off",
     "@typescript-eslint/class-methods-use-this": "off",
     "@typescript-eslint/consistent-generic-constructors": "off",
@@ -45,7 +47,7 @@ module.exports = {
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/no-empty-function": "off", // extension rule
-    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-empty-object-type": "error",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-extraneous-class": "error",
@@ -56,8 +58,6 @@ module.exports = {
     "@typescript-eslint/no-invalid-void-type": "error",
     "no-loop-func": "off",
     "@typescript-eslint/no-loop-func": "error",
-    "no-loss-of-precision": "off",
-    "@typescript-eslint/no-loss-of-precision": "error", // extension rule
     "@typescript-eslint/no-magic-numbers": "off", // extension rule
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
@@ -69,11 +69,14 @@ module.exports = {
     "@typescript-eslint/no-require-imports": "error",
     "no-restricted-imports": "off",
     "@typescript-eslint/no-restricted-imports": "off",
+    "@typescript-eslint/no-restricted-types": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
+    "@typescript-eslint/no-unnecessary-parameter-property-assignment": "off",
     "@typescript-eslint/no-unsafe-declaration-merging": "error",
+    "@typescript-eslint/no-unsafe-function-type": "off",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error", // extension rule
     "no-unused-vars": "off",
@@ -89,7 +92,7 @@ module.exports = {
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error", // extension rule
     "@typescript-eslint/no-useless-empty-export": "error",
-    "@typescript-eslint/no-var-requires": "error",
+    "@typescript-eslint/no-wrapper-object-types": "error",
     "@typescript-eslint/parameter-properties": "off",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
@@ -98,8 +101,6 @@ module.exports = {
     "@typescript-eslint/prefer-literal-enum-member": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
-    "@typescript-eslint/prefer-ts-expect-error": "error",
-    "@typescript-eslint/sort-type-constituents": "off",
     "@typescript-eslint/triple-slash-reference": "error",
     "@typescript-eslint/typedef": "off",
     "@typescript-eslint/unified-signatures": "error",
