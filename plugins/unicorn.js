@@ -16,6 +16,7 @@ module.exports = {
     "unicorn/custom-error-definition": "off",
     "unicorn/error-message": "error",
     "unicorn/escape-case": "error",
+    "unicorn/empty-brace-spaces": "off", // handled by prettier
     "unicorn/expiring-todo-comments": "off",
     "unicorn/explicit-length-check": "off",
     "unicorn/filename-case": "off",

@@ -27,18 +27,28 @@ module.exports = {
     "react/hook-use-state": "off",
     "react/iframe-missing-sandbox": "error",
     "react/jsx-boolean-value": ["error", "never"],
+    "react/jsx-child-element-spacing": "off", // handled by prettier
+    "react/jsx-closing-bracket-location": "off", // handled by prettier
+    "react/jsx-closing-tag-location": "off", // handled by prettier
     "react/jsx-curly-brace-presence": [
       "error",
       { props: "never", children: "ignore" },
     ],
+    "react/jsx-curly-newline": "off", // handled by prettier
+    "react/jsx-curly-spacing": "off", // handled by prettier
+    "react/jsx-equals-spacing": "off", // handled by prettier
     "react/jsx-filename-extension": [
       "error",
       { extensions: [".js", ".jsx", ".tsx"] },
     ],
+    "react/jsx-first-prop-new-line": "off", // handled by prettier
     "react/jsx-fragments": "error",
     "react/jsx-handler-names": "off",
+    "react/jsx-indent": "off", // handled by prettier
+    "react/jsx-indent-props": "off", // handled by prettier
     "react/jsx-key": "error",
     "react/jsx-max-depth": "off",
+    "react/jsx-max-props-per-line": "off", // handled by prettier
     "react/jsx-newline": "off",
     "react/jsx-no-bind": "off",
     "react/jsx-no-comment-textnodes": "error",
@@ -51,7 +61,9 @@ module.exports = {
     "react/jsx-no-target-blank": "off",
     "react/jsx-no-undef": "error",
     "react/jsx-no-useless-fragment": "off",
+    "react/jsx-one-expression-per-line": "off", // handled by prettier
     "react/jsx-pascal-case": "error",
+    "react/jsx-props-no-multi-spaces": "off", // handled by prettier
     "react/jsx-props-no-spreading": "off",
     "react/jsx-sort-props": [
       "error",
@@ -60,8 +72,10 @@ module.exports = {
         reservedFirst: ["key", "ref"],
       },
     ],
+    "react/jsx-tag-spacing": "off", // handled by prettier
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "react/jsx-wrap-multilines": "off", // handled by prettier
     "react/no-access-state-in-setstate": "error",
     "react/no-adjacent-inline-elements": "error",
     "react/no-array-index-key": "off",

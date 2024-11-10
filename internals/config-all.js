@@ -11,8 +11,6 @@ module.exports = {
     "../plugins/typescript-static.js",
     "../plugins/typescript-types.js",
     "../plugins/unicorn.js",
-
-    "prettier",
   ],
 
   plugins: ["@typescript-eslint"],

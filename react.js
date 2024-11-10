@@ -15,8 +15,6 @@ module.exports = {
     "./plugins/unicorn",
     "./plugins/import",
     "./plugins/react",
-
-    "prettier",
   ],
 
   env: {

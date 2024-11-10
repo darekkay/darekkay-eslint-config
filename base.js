@@ -255,5 +255,7 @@ module.exports = {
     "no-empty-static-block": "error",
     "no-new-native-nonconstructor": "error",
     "no-object-constructor": "error",
+    curly: "off",
+    "no-unexpected-multiline": "off",
   },
 };

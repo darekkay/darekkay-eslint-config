@@ -32,7 +32,6 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/init-declarations": "off", // extension rule
-    "@typescript-eslint/lines-between-class-members": "error", // extension rule
     "max-params": "off",
     "@typescript-eslint/max-params": ["error", { max: 7 }], // extension rule
     "@typescript-eslint/member-ordering": "off",
@@ -91,7 +90,6 @@ module.exports = {
     "@typescript-eslint/no-useless-constructor": "error", // extension rule
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/no-var-requires": "error",
-    "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "off",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
