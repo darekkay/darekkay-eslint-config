@@ -61,6 +61,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepublishOnly": "npm run ci",
-    "test": "node internals/find-new-rules.js"
+    "test": "npm run test:rules && npm run test:ts-separation",
+    "test:rules": "node internals/find-new-rules.js",
+    "test:ts-separation": "node internals/verify-typescript-separation.js"
   }
 }

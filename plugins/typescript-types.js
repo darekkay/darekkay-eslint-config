@@ -54,6 +54,7 @@ module.exports = {
     "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-promise-reject-errors": "off", // extension rule
     "@typescript-eslint/prefer-readonly": "error",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",

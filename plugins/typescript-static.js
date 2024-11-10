@@ -100,7 +100,6 @@ module.exports = {
     "@typescript-eslint/prefer-function-type": "off",
     "@typescript-eslint/prefer-literal-enum-member": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
-    "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/triple-slash-reference": "error",
     "@typescript-eslint/typedef": "off",
     "@typescript-eslint/unified-signatures": "error",
